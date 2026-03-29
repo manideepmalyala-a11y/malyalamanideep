@@ -1,0 +1,170 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manideep | Java Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background: #0b1120;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 80px 20px 40px;
+  animation: fadeDown 1s ease;
+}
+
+header h1 {
+  font-size: 40px;
+  background: linear-gradient(90deg,#60a5fa,#22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header p {
+  margin-top: 10px;
+  opacity: .8;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  background: rgba(15,23,42,.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+nav a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+  animation: fadeUp 1s ease;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+.card {
+  background: #111827;
+  padding: 25px;
+  border-radius: 16px;
+  margin-top: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.3);
+  transition: transform .3s, box-shadow .3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.5);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 18px;
+  background: linear-gradient(90deg,#3b82f6,#06b6d4);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #020617;
+  margin-top: 40px;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px);} 
+  to { opacity: 1; transform: translateY(0);} 
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px);} 
+  to { opacity: 1; transform: translateY(0);} 
+}
+
+/* Mobile */
+@media(max-width:600px){
+  header h1{ font-size:28px }
+  nav{ flex-wrap:wrap }
+}
+
+  </style>
+</head>
+<body><header>
+  <h1>Manideep</h1>
+  <p>Java Developer | Spring Boot | Backend Specialist</p>
+</header><nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav><section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>Hello! I'm Manideep, a passionate Java Developer specializing in Spring Boot, REST APIs, and backend system design. I enjoy building scalable applications and solving real-world problems.</p>
+  </div>
+</section><section id="skills">
+  <h2>Skills</h2>
+  <div class="card">
+    <ul>
+      <li>Java</li>
+      <li>Spring Boot</li>
+      <li>Hibernate</li>
+      <li>REST APIs</li>
+      <li>Microsoft SQL Server</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </div>
+</section><section id="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <p><strong>Employee Management System</strong> - Spring Boot CRUD application</p>
+    <p><strong>REST API Service</strong> - Secure backend APIs using JWT</p>
+  </div>
+</section><section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: manideepmalyala1997@gmail.com</p>
+    <a class="btn" href="mailto:manideepmalyala1997@gmail.com">Contact Me</a>
+  </div>
+</section><footer>
+  <p>© 2026 Manideep | Java Developer</p>
+</footer></body>
+</html>
